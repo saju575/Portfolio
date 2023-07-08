@@ -1,5 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
+import {
+  faAddressCard,
+  faFileArrowDown,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HeaderImage } from "./HeaderImage";
 
 export const Header = () => {
@@ -28,7 +33,8 @@ export const Header = () => {
                 >
                   <span>
                     <span className="mr-3">Contact me</span>
-                    <i className="fa-regular fa-address-card text-sm"></i>
+                    {/* <i className="fa-regular fa-address-card text-sm"></i> */}
+                    <FontAwesomeIcon icon={faAddressCard} />
                   </span>
                 </a>
               </div>
@@ -39,7 +45,8 @@ export const Header = () => {
                 >
                   <span>
                     <span className="mr-3">Download Resume</span>
-                    <i className="fa-solid fa-file-arrow-down text-sm"></i>
+                    {/* <i className="fa-solid fa-file-arrow-down text-sm"></i> */}
+                    <FontAwesomeIcon icon={faFileArrowDown} />
                   </span>
                 </a>
               </div>
