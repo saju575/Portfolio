@@ -22,7 +22,7 @@ const Qualification = () => {
         seletedTab={selectedTab}
         setSeletedTabs={setSelectedTab}
       />
-      <div class="container mx-auto px-4 py-6 flex flex-col justify-center sm:py-12">
+      <div className="container mx-auto px-4 py-6 flex flex-col justify-center sm:py-12">
         {content}
       </div>
     </section>

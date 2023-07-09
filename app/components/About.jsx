@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { AboutImage } from "./AboutImage";
 
 export const About = () => {
@@ -46,18 +47,31 @@ export const About = () => {
 
           {/* <!-- social midea link --> */}
           <div className="text-[#38BDF8] text-lg p-2 flex flex-row space-x-5 items-center my-3">
-            <a target="_blank" className="mb-2" href="#">
+            <Link
+              target="_blank"
+              className="mb-2"
+              href="https://github.com/saju575"
+              title="gitHub"
+            >
               <FontAwesomeIcon className="hover:text-white" icon={faGitAlt} />
-            </a>
+            </Link>
             <a target="_blank" className="mb-2" href="#">
               <FontAwesomeIcon className="hover:text-white" icon={faEnvelope} />
             </a>
-            <a target="_blank" className="mb-2" href="#">
+            <Link
+              target="_blank"
+              className="mb-2"
+              href="https://www.linkedin.com/in/sakilahmed-saju-8505041a4/"
+            >
               <FontAwesomeIcon className="hover:text-white" icon={faLinkedin} />
-            </a>
-            <a target="_blank" className="mb-2" href="#">
+            </Link>
+            <Link
+              target="_blank"
+              className="mb-2"
+              href="https://www.faecbook.com/sakilahmed.saju"
+            >
               <FontAwesomeIcon className="hover:text-white" icon={faFacebook} />
-            </a>
+            </Link>
           </div>
           {/* <!-- downlod cv --> */}
           <div>
