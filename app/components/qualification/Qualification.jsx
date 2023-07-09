@@ -16,7 +16,7 @@ const Qualification = () => {
     content = <Education />;
   }
   return (
-    <section className="qualification">
+    <section id="qualification" className="qualification">
       <QualificationTitle />
       <QualificationTabs
         seletedTab={selectedTab}

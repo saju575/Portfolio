@@ -10,7 +10,7 @@ import { HeaderImage } from "./HeaderImage";
 export const Header = () => {
   return (
     // <!-- Header section -->
-    <header className="header">
+    <header id="header" className="header">
       <div className="container mx-auto h-full pl-2">
         <div className="h-full flex flex-col md:flex-row justify-between items-center p-4">
           <div className="text-white w-full md:w-1/2">

@@ -9,7 +9,7 @@ import { AboutImage } from "./AboutImage";
 
 export const About = () => {
   return (
-    <section className="text-white py-14">
+    <section id="about" className="text-white py-14">
       {/* about title section */}
       <div className="flex flex-col items-center">
         <h2 className="text-4xl uppercase font-semibold py-2">

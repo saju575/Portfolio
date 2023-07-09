@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <nav className="shadow-lg bg-[#040b1b] text-white nav-border">
@@ -7,15 +9,15 @@ const Navbar = () => {
         {/* <img className="h-10" src="../assets/image/learningportal.svg" />  */}
         <h2>Sakil Ahmed</h2>
         <div className="flex items-center gap-3">
-          <a href="#" className="font-bold">
+          <Link href="#header" className="font-bold">
             Home
-          </a>
-          <a href="#" className="font-bold">
+          </Link>
+          <Link href="#about" className="font-bold">
             About
-          </a>
-          <a href="#" className="font-bold">
+          </Link>
+          <Link href="#qualification" className="font-bold">
             Qualification
-          </a>
+          </Link>
           <a href="#" className="font-bold">
             Projects
           </a>
