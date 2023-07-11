@@ -3,12 +3,12 @@ import {
   faGitAlt,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { AboutImage } from "./AboutImage";
+import AboutImage from "./AboutImage";
 
-export const About = () => {
+const About = () => {
   return (
     <section id="about" className="text-white py-14">
       {/* about title section */}
@@ -30,17 +30,17 @@ export const About = () => {
             opportunities with forward-thinking companies to further expand my
             skills and expertise.
           </p>
-          <div className="flex space-x-4 my-10">
-            <div className="flex flex-col items-center sm:text-lg font-bold">
+          <div className="flex  my-10 flex-wrap">
+            <div className="mr-4 flex flex-col items-center sm:text-lg font-bold">
               <h3 className="text-2xl text-[#38BDF8]">10+</h3>
               <p className="text-center">Completed projects</p>
             </div>
-            <div className="flex flex-col items-center sm:text-lg font-bold">
+            <div className="mr-4 flex flex-col items-center sm:text-lg font-bold">
               <h3 className="text-2xl text-[#38BDF8]">0+</h3>
               <p className="text-center">Years experiences</p>
             </div>
             <div className="flex flex-col items-center sm:text-lg font-bold">
-              <h3 className="text-2xl text-[#38BDF8]">2+</h3>
+              <h3 className="text-2xl text-[#38BDF8]">0+</h3>
               <p className="text-center">Companies worked</p>
             </div>
           </div>
@@ -55,9 +55,9 @@ export const About = () => {
             >
               <FontAwesomeIcon className="hover:text-white" icon={faGitAlt} />
             </Link>
-            <a target="_blank" className="mb-2" href="#">
+            {/* <Link className="mb-2" href="mailto:sakilahmedsaju1121@gmail.com">
               <FontAwesomeIcon className="hover:text-white" icon={faEnvelope} />
-            </a>
+            </Link> */}
             <Link
               target="_blank"
               className="mb-2"
@@ -91,3 +91,5 @@ export const About = () => {
     </section>
   );
 };
+
+export default About;

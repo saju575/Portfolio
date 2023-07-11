@@ -5,6 +5,7 @@ import Education from "./Education";
 import QualificationTabs from "./QualificationTabs";
 import QualificationTitle from "./QualificationTitle";
 import Skill from "./Skill";
+import Work from "./Work";
 
 const Qualification = () => {
   const [selectedTab, setSelectedTab] = useState("skill");
@@ -14,6 +15,8 @@ const Qualification = () => {
     content = <Skill />;
   } else if (selectedTab === "education") {
     content = <Education />;
+  } else if (selectedTab === "work") {
+    content = <Work />;
   }
   return (
     <section id="qualification" className="qualification">

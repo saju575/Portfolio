@@ -1,13 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
-
 import {
   faAddressCard,
   faFileArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { HeaderImage } from "./HeaderImage";
+import Link from "next/link";
+import styles from "./Header.module.css";
+import HeaderImage from "./HeaderImage";
 
-export const Header = () => {
+const Header = () => {
   return (
     // <!-- Header section -->
     <header id="header" className="header">
@@ -25,10 +25,10 @@ export const Header = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto amet in id mollitia! ctetur adipisicing elit
             </p>
-            <div className="flex space-x-6">
-              <div>
-                <a
-                  href="#"
+            <div className="flex  flex-wrap">
+              <div className={` mr-4`}>
+                <Link
+                  href="#contact"
                   className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                 >
                   <span>
@@ -36,11 +36,12 @@ export const Header = () => {
                     {/* <i className="fa-regular fa-address-card text-sm"></i> */}
                     <FontAwesomeIcon icon={faAddressCard} />
                   </span>
-                </a>
+                </Link>
               </div>
-              <div>
-                <a
-                  href="#"
+              <div className={`${styles.headerBtn}`}>
+                <Link
+                  href="/images/about.png"
+                  download
                   className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                 >
                   <span>
@@ -48,7 +49,7 @@ export const Header = () => {
                     {/* <i className="fa-solid fa-file-arrow-down text-sm"></i> */}
                     <FontAwesomeIcon icon={faFileArrowDown} />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -58,3 +59,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

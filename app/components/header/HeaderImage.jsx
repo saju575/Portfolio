@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import styles from "./HeaderImage.module.css";
 
-export const HeaderImage = () => {
+const HeaderImage = () => {
   return (
     <div className="w-full md:w-1/2 flex justify-center md:justify-end items-center">
       {/* <img
@@ -23,3 +23,5 @@ export const HeaderImage = () => {
     </div>
   );
 };
+
+export default HeaderImage;

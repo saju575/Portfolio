@@ -43,7 +43,8 @@ body {
   color: #334266;
   box-shadow: inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.7);
 }
-.tabs button:hover {
+.tabs button:hover,
+.tabs a:hover {
   cursor: pointer;
   box-shadow: inset 0 0.3rem 0.5rem rgba(60, 71, 97, 0.7);
   background: #ffffff;

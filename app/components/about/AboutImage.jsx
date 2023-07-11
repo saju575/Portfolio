@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export const AboutImage = () => {
+const AboutImage = () => {
   return (
     <div className="w-full md:w-1/2 mb-10 md:mb-0">
       <div className="flex justify-center">
@@ -22,3 +22,5 @@ export const AboutImage = () => {
     </div>
   );
 };
+
+export default AboutImage;

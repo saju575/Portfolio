@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="my-8">
+    <section id="contact" className="my-8">
       <div className="flex flex-col items-center">
         <h2 className="text-4xl flex flex-col items-center uppercase font-semibold py-4">
           <span className="text-[#38BDF8] mb-2">Contact Me</span>

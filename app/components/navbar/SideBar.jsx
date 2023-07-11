@@ -3,21 +3,20 @@ import {
   faGitAlt,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export const SideBar = () => {
+const SideBar = () => {
   return (
     <div className="text-white text-lg bg-[#040b1b] rounded-e shadow p-2 fixed left-0 top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center">
       <Link target="_blank" className="mb-2" href="https://github.com/saju575">
         {/* <i className="hover:text-[#38BDF8] fa-brands fa-git-alt"></i> */}
         <FontAwesomeIcon className="hover:text-[#38BDF8]" icon={faGitAlt} />
       </Link>
-      <Link target="_blank" className="mb-2" href="#">
-        {/* <i className="hover:text-[#38BDF8] fa-solid fa-envelope"></i> */}
+      {/* <Link className="mb-2" href="mailto:sakilahmedsaju1121@gmail.com">
+       
         <FontAwesomeIcon className="hover:text-[#38BDF8]" icon={faEnvelope} />
-      </Link>
+      </Link> */}
       <Link
         target="_blank"
         className="mb-2"
@@ -37,3 +36,4 @@ export const SideBar = () => {
     </div>
   );
 };
+export default SideBar;
