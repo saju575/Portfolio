@@ -35,16 +35,16 @@ const Navbar = () => {
             <Link href="/" className="font-bold">
               Home
             </Link>
-            <Link href="#about" className="font-bold">
+            <Link href="/#about" className="font-bold">
               About
             </Link>
-            <Link href="#qualification" className="font-bold">
+            <Link href="/#qualification" className="font-bold">
               Qualification
             </Link>
-            <Link href="#project" className="font-bold">
+            <Link href="/#project" className="font-bold">
               Projects
             </Link>
-            <Link href="#contact" className="font-bold">
+            <Link href="/#contact" className="font-bold">
               Contact
             </Link>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
                   <span>Home</span>
                 </Link>
                 <Link
-                  href="#about"
+                  href="/#about"
                   className=" font-semibold flex flex-col items-center"
                   onClick={handleMenuClose}
                 >
@@ -78,7 +78,7 @@ const Navbar = () => {
                   <span>About</span>
                 </Link>
                 <Link
-                  href="#qualification"
+                  href="/#qualification"
                   className=" font-semibold flex flex-col items-center"
                   onClick={handleMenuClose}
                 >
@@ -86,7 +86,7 @@ const Navbar = () => {
                   <span>Qualification</span>
                 </Link>
                 <Link
-                  href="#project"
+                  href="/#project"
                   className=" font-semibold flex flex-col items-center"
                   onClick={handleMenuClose}
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <span>Projects</span>
                 </Link>
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className=" font-semibold flex flex-col items-center"
                   onClick={handleMenuClose}
                 >

@@ -22,13 +22,15 @@ const Header = () => {
               Web developer
             </p>
             <p className="mb-10 text-lg text-[#8998AC]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto amet in id mollitia! ctetur adipisicing elit
+              Here, you can find a details overview of my technical skills,
+              education, projects, experience and contact information. I hope
+              this will give you a better understanding of my qualifications and
+              why I would be a great asset to your team.
             </p>
             <div className="flex  flex-wrap">
               <div className={` mr-4`}>
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                 >
                   <span>

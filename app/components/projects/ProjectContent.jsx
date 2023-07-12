@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 // import SwiperCore, { AutoPlay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { projects } from "../../../lib/projects";
 import OneProjectItem from "./OneProjectItem";
 import ProjectTabs from "./ProjectTabs";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
-const ProjectContent = () => {
+
+const ProjectContent = ({ projects }) => {
   const [tabs, setTabs] = useState("all");
 
   //   what to rander

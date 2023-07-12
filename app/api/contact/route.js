@@ -1,10 +1,12 @@
-import { mailOptions, transporter } from "../../config/nodemailer";
+import { NextResponse } from "next/server";
+import { mailOptions, transporter } from "../../../config/nodemailer";
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
   email: "Email",
   subject: "Subject",
   message: "Message",
 };
+
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) =>
@@ -21,26 +23,22 @@ const generateEmailContent = (data) => {
   };
 };
 
-const handler = async (req, res) => {
-  if (req.method === "POST") {
-    const values = req.body;
+export async function POST(req) {
+  try {
+    const values = await req.json();
+    //console.log(values);
     if (!values.name || !values.email || !values.subject || !values.message) {
-      return res.status(400).json({ message: "Bad request" });
+      throw new Error(`Bad request`);
     }
-    try {
-      await transporter.sendMail({
-        ...mailOptions,
+    await transporter.sendMail({
+      ...mailOptions,
 
-        subject: values.subject,
-        ...generateEmailContent(values),
-      });
-      return res.status(200).json({ success: true });
-    } catch (error) {
-      // console.log(error.message);
-      return res.status(400).json({ message: error.message });
-    }
+      subject: values.subject,
+      ...generateEmailContent(values),
+    });
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.log(error.message);
+    return new Response(error.message, { status: 400 });
   }
-  return res.status(400).json({ message: "Bad request" });
-};
-
-export default handler;
+}

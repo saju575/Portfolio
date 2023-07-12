@@ -1,4 +1,6 @@
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import SideBar from "./components/navbar/SideBar";
 import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -15,7 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
+        <SideBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Learning portal",
+    "img": "/images/home.png",
+    "liveLink": "https://lws-learningprotal.netlify.app/",
+    "gitClientLink": " https://github.com/saju575/Learning_Protal",
+    "gitServerLink": "",
+    "description": "Learning portal",
+    "functionality": [
+      "Lorem ipsum dolor sit amet consectetur.",
+      "Architecto amet in id mollitia! ctetur adipisicing elit."
+    ],
+    "category": "frontend",
+    "frontendTechnology": ["React.js", "JavaScript", "React-router-dom"],
+    "backendTechnology": ["JSON server"]
+  },
+  {
+    "id": 2,
+    "title": "Grosary Stock",
+    "img": "/images/full_stack.webp",
+    "liveLink": "https://grosery-inventory.web.app/",
+    "gitClientLink": "https://github.com/saju575/Grosary_Stock",
+    "gitServerLink": "",
+    "description": "Grosary Stock",
+    "functionality": [],
+    "category": "full-stack",
+    "frontendTechnology": [
+      "React.js",
+      "JavaScript",
+      "React-router-dom",
+      "Firebase"
+    ],
+    "backendTechnology": ["Express.js", "MongoDB", "JWT"]
+  }
+]
