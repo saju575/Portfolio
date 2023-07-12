@@ -75,9 +75,9 @@ const About = () => {
           </div>
           {/* <!-- downlod cv --> */}
           <div>
-            <Link
+            <a
               href="/resume.pdf"
-              download={"/resume.pdf"}
+              download
               className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
             >
               <span>
@@ -85,7 +85,7 @@ const About = () => {
 
                 <FontAwesomeIcon icon={faFileArrowDown} />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

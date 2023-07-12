@@ -15,13 +15,13 @@ const Header = () => {
         <div className="h-full flex flex-col md:flex-row justify-between items-center p-4">
           <div className="text-white w-full md:w-1/2">
             <p className="mb-3 text-[#8251CF]">👋 Hi, I am</p>
-            <h2 className="mb-6 text-5xl font-bold uppercase">
+            <h2 className="mb-6 text-4xl md:text-5xl font-bold uppercase">
               Sakil <span className="text-[#38BDF8]">Ahmed</span>
             </h2>
             <p className="mb-8 text-lg font-semibold text-[#8998AC]">
               Web developer
             </p>
-            <p className="mb-10 text-lg text-[#8998AC]">
+            <p className="mb-10 md:text-lg text-[#8998AC]">
               Here, you can find a details overview of my technical skills,
               education, projects, experience and contact information. I hope
               this will give you a better understanding of my qualifications and
@@ -41,9 +41,9 @@ const Header = () => {
                 </Link>
               </div>
               <div className={`${styles.headerBtn}`}>
-                <Link
+                <a
                   href="/resume.pdf"
-                  download={"/resume.pdf"}
+                  download
                   className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                 >
                   <span>
@@ -51,7 +51,7 @@ const Header = () => {
 
                     <FontAwesomeIcon icon={faFileArrowDown} />
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

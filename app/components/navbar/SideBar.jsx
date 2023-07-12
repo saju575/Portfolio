@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const SideBar = () => {
   return (
-    <div className="text-white text-lg bg-[#040b1b] rounded-e shadow p-2 fixed left-0 top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center">
+    <div className="z-50 text-white text-lg bg-[#040b1b] rounded-e shadow p-2 fixed left-0 top-1/2 transform -translate-y-1/2 flex flex-col justify-center items-center">
       <Link target="_blank" className="mb-2" href="https://github.com/saju575">
         {/* <i className="hover:text-[#38BDF8] fa-brands fa-git-alt"></i> */}
         <FontAwesomeIcon className="hover:text-[#38BDF8]" icon={faGitAlt} />

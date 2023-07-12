@@ -20,7 +20,7 @@ export async function generateMetadata({ params: { projectId } }) {
 const page = async ({ params: { projectId } }) => {
   const project = await getProject(projectId);
   return (
-    <section className=" pt-20 pb-24 projectPage">
+    <section className="pt-8 md:pt-20 pb-24 projectPage">
       <div className="container  flex flex-col lg:flex-row mx-auto px-3 sm:px-0">
         <div className="column first-column ">
           <div className="mb-2">

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { faCode, faEdit, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faEye, faShare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,10 +9,17 @@ const OneProjectItem = ({ project }) => {
   const { id, img, title, liveLink, gitClientLink } = project;
   return (
     <div className="p-2 rounded bg-[#151F28]">
-      {/* <Image src={img} alt={title} width={400} height={200} /> */}
-      <Link href={`/${id}`}>
+      <Image
+        src={img}
+        alt={title}
+        width={600}
+        height={600}
+        className={`transisition-opacity opacity-0 duration-[2s]`}
+        onLoadingComplete={(img) => img.classList.remove("opacity-0")}
+      />
+      {/* <Link href={`/${id}`}>
         <img className="cursor-pointer" src={img} alt={title} />
-      </Link>
+      </Link> */}
       <p className="text-white py-2">{title}</p>
       <div className="text-white pb-2 tabs flex flex-wrap space-x-2">
         <Link
@@ -31,7 +39,7 @@ const OneProjectItem = ({ project }) => {
           <span>Code Link</span>
         </Link>
         <Link href={`/${id}`} className="px-1 rounded-sm m-1 bg-[#334266]">
-          <FontAwesomeIcon className="mr-1 text-sm" icon={faEdit} />
+          <FontAwesomeIcon className="mr-1 text-sm" icon={faShare} />
           See details
         </Link>
       </div>
