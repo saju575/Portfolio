@@ -35,20 +35,20 @@ const Header = () => {
                 >
                   <span>
                     <span className="mr-3">Contact me</span>
-                    {/* <i className="fa-regular fa-address-card text-sm"></i> */}
+
                     <FontAwesomeIcon icon={faAddressCard} />
                   </span>
                 </Link>
               </div>
               <div className={`${styles.headerBtn}`}>
                 <Link
-                  href="/images/about.png"
-                  download
+                  href="/resume.pdf"
+                  download={"/resume.pdf"}
                   className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                 >
                   <span>
                     <span className="mr-3">Download Resume</span>
-                    {/* <i className="fa-solid fa-file-arrow-down text-sm"></i> */}
+
                     <FontAwesomeIcon icon={faFileArrowDown} />
                   </span>
                 </Link>

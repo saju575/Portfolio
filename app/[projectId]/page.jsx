@@ -13,7 +13,7 @@ import MoreProjects from "./components/MoreProjects";
 export async function generateMetadata({ params: { projectId } }) {
   const project = await getProject(projectId);
   return {
-    title: `Protfolio | ${project.title}`,
+    title: `Sakil Ahmed | ${project.title}`,
     description: `This is a details page of ${project.title} project`,
   };
 }
@@ -35,14 +35,14 @@ const page = async ({ params: { projectId } }) => {
           <div className="flex flex-col">
             <div className="p-2 rounded bg-[#151F28] ">
               <img
-                className="max-h-[460px] object-cover object-center rounded my-4"
+                className="max-h-[470px] object-cover object-center rounded my-4"
                 src={project.img}
                 alt="git"
                 title={`Project screenshot`}
               />
             </div>
             <div>
-              <h2 className="text-2xl mt-4 text-[#34B5FD] sm:text-3xl title font-semibold">
+              <h2 className="text-2xl mt-4 text-[#34B5FD] sm:text-3xl title font-semibold uppercase">
                 {project.title}
               </h2>
               {/* className={`${styles.headerBtn}`} */}

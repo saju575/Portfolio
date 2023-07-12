@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { faCode, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faEdit, faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
@@ -31,7 +31,7 @@ const OneProjectItem = ({ project }) => {
           <span>Code Link</span>
         </Link>
         <Link href={`/${id}`} className="px-1 rounded-sm m-1 bg-[#334266]">
-          {/* <FontAwesomeIcon className="mr-1 text-sm" icon={} /> */}
+          <FontAwesomeIcon className="mr-1 text-sm" icon={faEdit} />
           See details
         </Link>
       </div>

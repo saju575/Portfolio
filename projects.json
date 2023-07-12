@@ -1,35 +1,46 @@
 [
   {
     "id": 1,
-    "title": "Learning portal",
+    "title": "Online Learning Portal",
     "img": "/images/home.png",
     "liveLink": "https://lws-learningprotal.netlify.app/",
     "gitClientLink": " https://github.com/saju575/Learning_Protal",
     "gitServerLink": "",
-    "description": "Learning portal",
+    "description": "Online Learning Portal is a comprehensive website designed for focused course-based learning.",
     "functionality": [
       "Lorem ipsum dolor sit amet consectetur.",
       "Architecto amet in id mollitia! ctetur adipisicing elit."
     ],
     "category": "frontend",
-    "frontendTechnology": ["React.js", "JavaScript", "React-router-dom"],
+    "frontendTechnology": [
+      "React.js",
+      "React Router",
+      "Tailwind",
+      "Redux",
+      "React-router-dom"
+    ],
     "backendTechnology": ["JSON server"]
   },
   {
     "id": 2,
-    "title": "Grosary Stock",
+    "title": "Grocery Stock",
     "img": "/images/full_stack.webp",
     "liveLink": "https://grosery-inventory.web.app/",
     "gitClientLink": "https://github.com/saju575/Grosary_Stock",
     "gitServerLink": "",
-    "description": "Grosary Stock",
-    "functionality": [],
+    "description": "Grocery Stock is a sophisticated website that efficiently manages inventory and dealer information.",
+    "functionality": [
+      "Implemented features to track product availability, sales, and delivery.",
+      "Allow dealer to add, delete, and update items.",
+      "Created a Sold information table page to track sales."
+    ],
     "category": "full-stack",
     "frontendTechnology": [
       "React.js",
-      "JavaScript",
-      "React-router-dom",
-      "Firebase"
+      "React Router",
+      "Tailwind",
+      "Firebase",
+      "React-toastify"
     ],
     "backendTechnology": ["Express.js", "MongoDB", "JWT"]
   }
