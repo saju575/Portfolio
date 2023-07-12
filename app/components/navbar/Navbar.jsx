@@ -86,7 +86,7 @@ const Navbar = () => {
                   <span>Qualification</span>
                 </Link>
                 <Link
-                  href="/#project"
+                  href="/#projects"
                   className=" font-semibold flex flex-col items-center"
                   onClick={handleMenuClose}
                 >
