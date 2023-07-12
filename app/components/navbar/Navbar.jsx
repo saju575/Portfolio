@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link href="/#qualification" className="font-bold">
               Qualification
             </Link>
-            <Link href="/#project" className="font-bold">
+            <Link href="/#projects" className="font-bold">
               Projects
             </Link>
             <Link href="/#contact" className="font-bold">

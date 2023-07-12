@@ -46,7 +46,7 @@ const FooterContent = () => {
               </li>
               <li>
                 <Link
-                  href="/#project"
+                  href="/#projects"
                   className="block  text-blue-500 hover:text-white hover:underline"
                 >
                   Projects

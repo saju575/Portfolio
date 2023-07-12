@@ -7,7 +7,7 @@ const Projects = async () => {
   const p = await getProjects();
   // console.log(p);
   return (
-    <section id="project" className="pb-32">
+    <section id="projects" className="pb-32">
       <ProjectTitle />
       <Suspense fallback={<h2>Loading...</h2>}>
         <ProjectContent projects={p} />
