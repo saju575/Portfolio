@@ -1,7 +1,7 @@
 import fsPromises from "fs/promises";
 import { NextResponse } from "next/server";
 import path from "path";
-export const GET = async () => {
+export async function GET() {
   const filePath = path.join(process.cwd(), "/projects.json");
   try {
     const jsonData = await fsPromises.readFile(filePath);
@@ -13,4 +13,4 @@ export const GET = async () => {
     console.log(error);
     return new NextResponse("Bad Request", { status: 400 });
   }
-};
+}

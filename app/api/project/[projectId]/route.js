@@ -2,7 +2,7 @@ import fsPromises from "fs/promises";
 import { NextResponse } from "next/server";
 import path from "path";
 
-export const GET = async (req) => {
+export async function GET(req) {
   const filePath = path.join(process.cwd(), "/projects.json");
   try {
     // const id = req.params.projectId;
@@ -16,4 +16,4 @@ export const GET = async (req) => {
   } catch (error) {
     return new NextResponse(error.message, { status: 400 });
   }
-};
+}
