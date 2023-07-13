@@ -8,17 +8,13 @@
     "gitServerLink": "",
     "description": "Online Learning Portal is a comprehensive website designed for focused course-based learning.",
     "functionality": [
-      "Lorem ipsum dolor sit amet consectetur.",
-      "Architecto amet in id mollitia! ctetur adipisicing elit."
+      "Video page for viewing educational videos and submitting quizzes and assignments.",
+      "Once a quiz or assignment is submitted, students cannot retake it for that specific video.",
+      "Leaderboard showcasing the top 20 student marks for quizzes and assignments.",
+      "Admin panel for administrators to add videos, assignments, quizzes, and grade student submissions."
     ],
     "category": "frontend",
-    "frontendTechnology": [
-      "React.js",
-      "React Router",
-      "Tailwind",
-      "Redux",
-      "React-router-dom"
-    ],
+    "frontendTechnology": ["React.js", "Tailwind", "Redux", "React-router-dom"],
     "backendTechnology": ["JSON server"]
   },
   {
