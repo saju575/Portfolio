@@ -35,7 +35,7 @@ const page = async ({ params: { projectId } }) => {
           <div className="flex flex-col">
             <div className="p-2 rounded bg-[#151F28] ">
               <img
-                className="max-h-[470px] object-cover object-center rounded my-4"
+                className="max-h-[480px] object-cover object-center rounded my-4"
                 src={project.img}
                 alt="git"
                 title={`Project screenshot`}
@@ -51,7 +51,7 @@ const page = async ({ params: { projectId } }) => {
                   <Link
                     href={project.liveLink}
                     target="_blank"
-                    className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
+                    className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-sm sm:text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                   >
                     <span className="">
                       <FontAwesomeIcon className="mr-3" icon={faEye} />
@@ -63,7 +63,7 @@ const page = async ({ params: { projectId } }) => {
                   <Link
                     href={project.gitClientLink}
                     target="_blank"
-                    className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
+                    className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-sm sm:text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                   >
                     <span>
                       <FontAwesomeIcon className="mr-3" icon={faCode} />
@@ -76,7 +76,7 @@ const page = async ({ params: { projectId } }) => {
                     <Link
                       href={project.gitServerLink}
                       target="_blank"
-                      className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
+                      className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-sm sm:text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                     >
                       <span>
                         <FontAwesomeIcon className="mr-3" icon={faCode} />

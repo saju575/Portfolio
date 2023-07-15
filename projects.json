@@ -20,14 +20,18 @@
   {
     "id": 2,
     "title": "Grocery Stock",
-    "img": "/images/full_stack.webp",
+    "img": "/images/1.png",
     "liveLink": "https://grosery-inventory.web.app/",
     "gitClientLink": "https://github.com/saju575/Grosary_Stock",
-    "gitServerLink": "",
-    "description": "Grocery Stock is a sophisticated website that efficiently manages inventory and dealer information.",
+    "gitServerLink": "https://github.com/saju575/Grocery-API",
+    "description": "This website serves as an information hub for Grosary Stock, designed specifically for dealers and not as a client-facing website.It provides valuable insights into the inventory, including the availability of various products, as well as tracking the number of sold items. Additionally, the website enables dealers to perform essential operations such as adding, deleting, and delivering products.",
     "functionality": [
+      "Developed a Grocery Stock website to manage inventory and dealer information.",
       "Implemented features to track product availability, sales, and delivery.",
-      "Allow dealer to add, delete, and update items.",
+      "In home page shows some top items available and products summaries.",
+
+      "Connected the website with the backend, allowing dealer to add, delete, and update items.",
+      "Restricted access to the inventory page and product details to logged-in users only.",
       "Created a Sold information table page to track sales."
     ],
     "category": "full-stack",
@@ -36,7 +40,9 @@
       "React Router",
       "Tailwind",
       "Firebase",
-      "React-toastify"
+      "react-helmet-async",
+      "recharts",
+      "Fontawesome"
     ],
     "backendTechnology": ["Express.js", "MongoDB", "JWT"]
   }

@@ -7,7 +7,7 @@ import Projects from "./components/projects/Projects";
 import Qualification from "./components/qualification/Qualification";
 
 // const inter = Inter({ subsets: ["latin"] });
-
+export const revalidate = 100;
 export default function Home() {
   return (
     <>

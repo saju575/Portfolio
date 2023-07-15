@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 
+import Course from "./Course";
 import Education from "./Education";
 import QualificationTabs from "./QualificationTabs";
 import QualificationTitle from "./QualificationTitle";
@@ -17,6 +18,8 @@ const Qualification = () => {
     content = <Education />;
   } else if (selectedTab === "work") {
     content = <Work />;
+  } else if (selectedTab === "course") {
+    content = <Course />;
   }
   return (
     <section id="qualification" className="qualification">
