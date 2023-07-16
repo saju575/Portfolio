@@ -19,6 +19,7 @@ const Course = () => {
                       Web Devlopment (MERN STACK)
                     </p>
                     <p>Programing Hero</p>
+                    <p className="text-xs mt-1">Jan 2022 - May 2022</p>
                     <div className="flex flex-wrap mt-4">
                       <div className={`${styles.headerBtn} mb-3`}>
                         <a
@@ -47,7 +48,7 @@ const Course = () => {
                 <div className="p-4 bg-[#151F28] text-[#8998AC] rounded shadow flex space-x-3">
                   <div>
                     <p className="mb-3  text-[17px] font-semibold">
-                      Think in a Redux way
+                      Think in a Redux way(Redux)
                     </p>
                     <p>Learn with Sumit</p>
                     <p className="text-xs mt-1">Feb 2023 - April 2023</p>
