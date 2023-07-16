@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./Course.module.css";
 const Course = () => {
@@ -19,12 +20,12 @@ const Course = () => {
                     <p>Programing Hero</p>
                     <div className="flex flex-wrap mt-4">
                       <div className={`${styles.headerBtn} mb-3`}>
-                        <a
+                        <Link
                           href="/images/certificate.png"
                           className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                         >
                           <span>Course Certificates</span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -52,20 +53,20 @@ const Course = () => {
                     <p className="text-xs mt-1">Feb 2023 - April 2023</p>
                     <div className="flex flex-wrap mt-4">
                       <div className={`${styles.headerBtn} mb-3`}>
-                        <a
+                        <Link
                           href="/images/LWS-Recommendation-Letter.jpg"
                           className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                         >
                           <span>Performance Certificates</span>
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.headerBtn}`}>
-                        <a
+                        <Link
                           href="/images/LWS-Certificate.jpg"
                           className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                         >
                           <span>Course Certificates</span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
