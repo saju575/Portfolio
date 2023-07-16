@@ -4,8 +4,8 @@
     "title": "Online Learning Portal",
     "img": "/images/home.png",
     "liveLink": "https://lws-learningprotal.netlify.app/",
-    "gitClientLink": " https://github.com/saju575/Learning_Protal",
-    "gitServerLink": "",
+    "gitClientLink": "https://github.com/saju575/Learning_Protal",
+    "gitServerLink": "https://github.com/saju575/Online-Learning-Portal-JSON-API",
     "description": "Online Learning Portal is a comprehensive website designed for focused course-based learning.",
     "functionality": [
       "Video page for viewing educational videos and submitting quizzes and assignments.",
@@ -15,7 +15,7 @@
     ],
     "category": "frontend",
     "frontendTechnology": ["React.js", "Tailwind", "Redux", "React-router-dom"],
-    "backendTechnology": ["JSON server"]
+    "backendTechnology": ["JSON server", "JSON server auth"]
   },
   {
     "id": 2,

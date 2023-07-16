@@ -1,3 +1,5 @@
+import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styles from "./Course.module.css";
 const Course = () => {
@@ -19,12 +21,12 @@ const Course = () => {
                     <p>Programing Hero</p>
                     <div className="flex flex-wrap mt-4">
                       <div className={`${styles.headerBtn} mb-3`}>
-                        {/* <Link
+                        <a
                           href="/images/certificate.png"
                           className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                         >
                           <span>Course Certificates</span>
-                        </Link> */}
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -32,8 +34,7 @@ const Course = () => {
               </div>
             </div>
             <div className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-              {/* <i className="text-white fa-solid fa-brain"></i> */}
-              {/* <FontAwesomeIcon className="text-white" icon={faBrain} /> */}
+              <FontAwesomeIcon className="text-white" icon={faAward} />
             </div>
           </div>
         </div>
@@ -60,12 +61,12 @@ const Course = () => {
                         </a>
                       </div>
                       <div className={`${styles.headerBtn}`}>
-                        {/* <Link
+                        <a
                           href="/images/LWS-Certificate.jpg"
                           className="px-3 text-[#8998AC] font-bold py-1 border border-[#1d2a48] text-cyan rounded-full text-base bg-[#0F172A] hover:bg-white hover:text-[#0284C7] pill"
                         >
                           <span>Course Certificates</span>
-                        </Link> */}
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -73,8 +74,7 @@ const Course = () => {
               </div>
             </div>
             <div className="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-              {/* <i className="text-white fa-solid fa-brain"></i> */}
-              {/* <FontAwesomeIcon className="text-white" icon={faBrain} /> */}
+              <FontAwesomeIcon className="text-white" icon={faAward} />
             </div>
           </div>
         </div>

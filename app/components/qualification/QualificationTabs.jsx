@@ -1,4 +1,5 @@
 import {
+  faAward,
   faBrain,
   faBriefcase,
   faGraduationCap,
@@ -39,7 +40,7 @@ const QualificationTabs = ({ seletedTab, setSeletedTabs }) => {
         }`}
         type="button"
       >
-        <FontAwesomeIcon icon={faGraduationCap} />
+        <FontAwesomeIcon icon={faAward} />
         <span className="ml-1">Courses</span>
       </button>
       <button
