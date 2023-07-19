@@ -10,7 +10,7 @@ Welcome to my portfolio! This repository contains the code and assets for my per
 - [Projects](#projects)
 - [Qualification](#skills)
 - [Contact](#contact)
-- [Technology](#technology used)
+- [Technology](#technology-used)
 - [License](#license)
 
 ## About
